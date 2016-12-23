@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.FXMLController">
+   <children>
+      <Label fx:id="lCategory" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="184.0" text="Kategoria">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="bStart" layoutX="448.0" layoutY="157.0" mnemonicParsing="false" onAction="#startGame" prefHeight="43.0" prefWidth="138.0" text="Start" />
+      <GridPane hgap="10.0" layoutX="5.0" layoutY="253.0" prefHeight="133.0" prefWidth="590.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bQ" mnemonicParsing="false" prefHeight="54.0" prefWidth="62.0" text="Q" />
+            <Button fx:id="bW" mnemonicParsing="false" prefHeight="55.0" prefWidth="71.0" text="W" GridPane.columnIndex="1" />
+            <Button fx:id="bE" mnemonicParsing="false" prefHeight="60.0" prefWidth="68.0" text="E" GridPane.columnIndex="2" />
+            <Button fx:id="bR" mnemonicParsing="false" prefHeight="51.0" prefWidth="67.0" text="R" GridPane.columnIndex="3" />
+            <Button fx:id="bT" mnemonicParsing="false" prefHeight="43.0" prefWidth="62.0" text="T" GridPane.columnIndex="4" />
+            <Button fx:id="bY" mnemonicParsing="false" prefHeight="40.0" prefWidth="54.0" text="Y" GridPane.columnIndex="5" />
+            <Button fx:id="bU" mnemonicParsing="false" prefHeight="42.0" prefWidth="74.0" text="U" GridPane.columnIndex="6" />
+            <Button fx:id="bI" mnemonicParsing="false" prefHeight="45.0" prefWidth="52.0" text="I" GridPane.columnIndex="7" />
+            <Button fx:id="bO" mnemonicParsing="false" prefHeight="44.0" prefWidth="62.0" text="O" GridPane.columnIndex="8" />
+            <Button fx:id="bP" mnemonicParsing="false" prefHeight="50.0" prefWidth="57.0" text="P" GridPane.columnIndex="9" />
+            <Button fx:id="bA" mnemonicParsing="false" prefHeight="41.0" prefWidth="53.0" text="A" GridPane.rowIndex="1" />
+            <Button fx:id="bS" mnemonicParsing="false" prefHeight="39.0" prefWidth="56.0" text="S" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="bD" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="D" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="bF" mnemonicParsing="false" prefHeight="52.0" prefWidth="59.0" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="bG" mnemonicParsing="false" prefHeight="56.0" prefWidth="93.0" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="bH" mnemonicParsing="false" prefHeight="47.0" prefWidth="57.0" text="H" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="bJ" mnemonicParsing="false" prefHeight="56.0" prefWidth="63.0" text="J" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="bK" mnemonicParsing="false" prefHeight="48.0" prefWidth="66.0" text="K" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="bL" mnemonicParsing="false" prefHeight="44.0" prefWidth="55.0" text="L" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="bZ" mnemonicParsing="false" prefHeight="46.0" prefWidth="82.0" text="Z" GridPane.rowIndex="2" />
+            <Button fx:id="bX" mnemonicParsing="false" prefHeight="48.0" prefWidth="75.0" text="X" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="bC" mnemonicParsing="false" prefHeight="47.0" prefWidth="67.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="bV" mnemonicParsing="false" prefHeight="41.0" prefWidth="53.0" text="V" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="bB" mnemonicParsing="false" prefHeight="46.0" prefWidth="61.0" text="B" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="bN" mnemonicParsing="false" prefHeight="45.0" prefWidth="64.0" text="N" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="bM" mnemonicParsing="false" prefHeight="59.0" prefWidth="74.0" text="M" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TextField fx:id="tfWord" layoutX="14.0" layoutY="145.0" prefHeight="43.0" prefWidth="246.0" text="Haslo">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
